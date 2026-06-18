@@ -172,10 +172,12 @@ jobs:
           fi
           # Emit via heredoc so embedded `=`, quotes, or newlines don't
           # break KEY=VALUE parsing in $GITHUB_ENV.
+          # Use a unique delimiter to prevent delimiter-injection.
+          SUMMARY_DELIM="EOF_SUMMARY_$(uuidgen)"
           {
-            echo "summary<<EOF_SUMMARY_7a4c"
+            echo "summary<<$SUMMARY_DELIM"
             printf '%s\n' "$SUMMARY"
-            echo "EOF_SUMMARY_7a4c"
+            echo "$SUMMARY_DELIM"
           } >> "$GITHUB_ENV"
 
       - name: Alert Slack on failure
