@@ -5,8 +5,8 @@ langchain-openai==1.1.14
 langchain-anthropic==1.4.6
 langgraph==1.1.6
 langgraph-cli[inmem]==0.4.21
-langgraph-api==0.7.101
+langgraph-api==0.10.0
 langsmith==0.8.18
 openai==1.109.1
 deepagents>=0.5.3,<0.6.0
-pypdf>=6.13.3,<7.0.0
+pypdf>=6.16.2,<7.0.0

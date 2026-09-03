@@ -15,7 +15,7 @@ dependencies = [
   "langchain-openai==1.1.14",
   "copilotkit==0.1.94",
   "ag-ui-protocol==0.1.18",
-  "langgraph-api==0.7.101",
+  "langgraph-api==0.10.0",
   "pip>=26.0.1",
   "langchain-anthropic==1.4.6",
 ]
